@@ -1,0 +1,31 @@
+
+{
+    "pln":{
+        "symbol":"PLN",
+        "price":0.25
+    },
+    "eur":{
+        "symbol":"EUR",
+        "price":1.08
+    },
+    "chf":{
+        "symbol":"CHF",
+        "price":1.11
+    },
+    "gbp":{
+        "symbol":"GBP",
+        "price":1.26
+    },
+    "usd":{
+        "symbol":"USD",
+        "price":1
+    },
+    "czk":{
+        "symbol":"CZK",
+        "price":0.04
+    },
+    "aud":{
+        "symbol":"AUD",
+        "price":0.65
+    }
+}
