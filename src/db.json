@@ -1,31 +1,83 @@
 
 {
     "pln":{
-        "symbol":"PLN",
+        "symbol":"PLN - Polski złoty",
         "price":0.25
     },
     "eur":{
-        "symbol":"EUR",
+        "symbol":"EUR - Euro",
         "price":1.08
     },
     "chf":{
-        "symbol":"CHF",
+        "symbol":"CHF - Frank szwajcarski",
         "price":1.11
     },
     "gbp":{
-        "symbol":"GBP",
+        "symbol":"GBP - Funt brytyjski",
         "price":1.26
     },
     "usd":{
-        "symbol":"USD",
+        "symbol":"USD - Dolar arerykański",
         "price":1
     },
     "czk":{
-        "symbol":"CZK",
+        "symbol":"CZK - Korona czeska",
         "price":0.04
     },
     "aud":{
-        "symbol":"AUD",
+        "symbol":"AUD - Dolar australijski",
         "price":0.65
+    },
+    "cad":{
+        "symbol":"CAD - Dolar kanadyjski",
+        "price":0.73
+    },
+    "nzd":{
+        "symbol":"NZD - Dolar nowozelandzki",
+        "price":0.6
+    },
+    "sek":{
+        "symbol":"SEK - Korona szwedzka",
+        "price":0.09
+    },
+    "jpy":{
+        "symbol":"JPY - Jen japoński",
+        "price":0.0065
+    },
+    "cny":{
+        "symbol":"CNY - Juan chiński",
+        "price":0.14
+    },
+    "krw":{
+        "symbol":"KRW - Won koreański",
+        "price":0.000732
+    },
+    "inr":{
+        "symbol":"INR - Rupia indyjska",
+        "price":0.01
+    },
+    "rub":{
+        "symbol":"RUB - Rubel rosyjski",
+        "price":0.01
+    },
+    "ars":{
+        "symbol":"ARS - Peso argentyńskie",
+        "price":0.0012
+    },
+    "try":{
+        "symbol":"TRY - Lira turecka",
+        "price":0.03
+    },
+    "huf":{
+        "symbol":"HUF - Forint węgierski",
+        "price":0.0027
+    },
+    "nok":{
+        "symbol":"NOK - Korona norweska",
+        "price":0.09
+    },
+    "brl":{
+        "symbol":"BRL - Real brazylijski",
+        "price":0.20
     }
 }
