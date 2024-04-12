@@ -1,5 +1,12 @@
+import { useEffect, useState } from "react";
 import db from "../../db.json"
-export default function Select({changed}){
+import "./Select.css"
+export default function Select({changed, ...props}){
+    const [currencies, setCurrencies] = useState([]);
+
+    useEffect(()=>{
+        setCurrencies(Object.keys(db));
+    },[]);
 
     function changedHandler(event){
         const text = event.target[event.target.selectedIndex].text;
@@ -7,15 +14,15 @@ export default function Select({changed}){
         let object = Object.values(db).filter(obj=>{
             return obj.symbol === text;
         })[0]
-        console.log(object.symbol)
         changed(object)
     }
-
+    
     return(
-        <select onChange={changedHandler}>
+        <select onChange={changedHandler} {...props}>
+            <option>Wybierz walutę</option>
             {
-                Object.keys(db).map(index=>{
-                    return <option>{db[index].symbol}</option>
+                currencies.map(index=>{
+                    return <option key={index}>{db[index].symbol}</option>
                 })
             }
         </select>
