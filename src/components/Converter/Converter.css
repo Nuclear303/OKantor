@@ -1,0 +1,26 @@
+.converter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.converter-column-3{
+    display: flex;
+    width: 47.7%;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+.converter-column-2{
+    display: flex;
+    width: 5%;
+    justify-content: center;
+}
+.converter-column-1{
+    display: flex;
+    width: 47.7%;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
