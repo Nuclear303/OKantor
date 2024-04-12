@@ -1,0 +1,13 @@
+.swap{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.swap img{
+    width:48px;
+    height: 48px;
+    background-color: var(--medium-blue);
+    border: 2px solid var(--dark-blue);
+    border-radius: 15px;
+}
