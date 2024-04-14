@@ -1,0 +1,8 @@
+h2{
+    color: #3f3f3f;
+}
+@media screen and (max-width:1024px){
+    .chart{
+        width:100%;
+    }
+}
