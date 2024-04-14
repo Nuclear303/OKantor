@@ -1,0 +1,22 @@
+/* table{
+    border: 1px solid black !important;
+} */
+table td{
+    color: #3f3f3f !important;
+    text-align: center;
+    padding: 10px;
+}
+th{
+    background-color: #32383e;
+    padding: 20px !important;
+}
+/* th:nth-of-type(2){
+    border-left: 2px solid var(--medium-blue);
+} */
+tr{
+ background-color: #dee2e6;
+}
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
