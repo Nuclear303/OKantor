@@ -19,6 +19,11 @@ export default function ValueArea({changed, val, ...props}){
                 return;
             }
             
+            if((val.substring(val.length-1, val.length - 0) === ",")){
+                event.target.value = val.substring(0, val.length - 1);
+                event.target.value+=".";
+            }
+
             if(val === ""){
                 event.target.value = 0;
             }
