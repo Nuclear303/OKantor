@@ -1,5 +1,6 @@
 import { Line } from "react-chartjs-2";
 import 'chartjs-adapter-date-fns';
+import React from "react";
 import "./LineChart.css"
 import {
     Chart as ChartJS,
@@ -24,27 +25,31 @@ ChartJS.register(
     TimeScale
   );
 
-export default function LineChart({title, labels, data}){
-    const chartData ={labels,
-    datasets: [
-      {
-        label: title,
-        data: data,
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      }
-    ],
-  };
-  
-    return (
-      <div className="chart">
-        <h2>{title}</h2>
-        <Line 
-          data={chartData} 
-          options={{
-          }
-          }
-        />
-      </div>
-    );
+export default class LineChart extends React.Component{
+    state = { 
+        chartData:{
+            labels:this.props.labels,
+            datasets: [
+            {
+                label: this.props.title,
+                data: this.props.data,
+                borderColor: 'rgb(255, 99, 132)',
+                backgroundColor: 'rgba(255, 99, 132, 0.5)',
+            }
+            ],
+        }
+    };
+
+    render(){
+        return (
+            <div className="chart">
+              <h2>{this.props.title}</h2>
+              <Line 
+                data={this.state.chartData} 
+                options={{}}
+              />
+            </div>
+          );
+    }
+    
   };
