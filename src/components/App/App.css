@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap);
 :root{
     --dark-blue: #B4B4B8;
-    --medium-blue: #C7C8CC;
-    --gray-blue: #E3E1D9;
+    --medium-blue: #32383e;
+    --gray-blue: #32383ec5;
     --light-blue:#F2EFE5;
 }
 *{
@@ -14,15 +14,20 @@ body{
     margin:0;
     padding:0;
 }
+h1{
+    color:#3f3f3f;
+    font-size: 3vw;
+}
 #root{
     background-color:#EEEEEE;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     padding-top: 110px;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 110px;
 }
 
 .container{
@@ -30,10 +35,61 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 1320px;
+    gap: 100px;
 }
 
 .container input{
     width: 20%;
     padding: 20px;
     font-size: 32px;
+}
+
+footer{
+    padding: 10px;
+    background: linear-gradient(150deg,#32383e,#334257);
+    position: static;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-opis{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.odnosniki{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.odnosniki a{
+    display: flex;
+    align-items: center;
+    margin:2vw;
+    border:1px solid white;
+    padding: 10px;
+    border-radius: 60%;
+}
+.odnosniki a:hover{
+    cursor: pointer;
+    animation: logo-animation 1s;
+}
+
+@media screen and (max-width:1024px) {
+    .container{
+        width: 100%;
+        gap: 50px;
+    }
+    #root{
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 50px;
+    }
+    h1{
+        font-size: 18px;
+    }
 }
