@@ -24,3 +24,12 @@
     flex-direction: column-reverse;
     gap: 20px;
 }
+@media screen and (max-width:1024px) {
+    .converter-column-1, .converter-column-3{
+        width: 40%;
+        align-items: center;
+    }
+    .converter-column-2{
+        width: 22.5%;
+    }
+}
