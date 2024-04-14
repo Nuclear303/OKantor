@@ -35,6 +35,9 @@ export default function Converter(){
         if(inputCurrency.symbol !== undefined && outputCurrency.symbol !== undefined){
             setOutputValue(((inputCurrency.price * inputValue) / outputCurrency.price).toFixed(2));
         }
+        else{
+            setOutputValue(0)
+        }
     },[inputCurrency.symbol, inputCurrency.price, outputCurrency.symbol, outputCurrency.price, inputValue])
     
     return(

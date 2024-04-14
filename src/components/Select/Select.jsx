@@ -10,7 +10,10 @@ export default function Select({changed, ...props}){
 
     function changedHandler(event){
         const text = event.target[event.target.selectedIndex].text;
-        
+        if(text === "Wybierz walutę"){
+            changed({"symbol":undefined, price:0})
+            return;
+        }
         let object = Object.values(db).filter(obj=>{
             return obj.symbol === text;
         })[0]
