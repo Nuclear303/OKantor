@@ -19,8 +19,8 @@ export default function Table(){
                                 return (
                                     <tr key={db[obj].symbol.split(" ")[0]}>
                                         <td>{db[obj].symbol.split(" ")[0]}</td>
-                                        <td>{Number(db["pln"].price/db[obj].price*1.03).toFixed(4)}</td>
-                                        <td>{Number(db["pln"].price/db[obj].price*0.98).toFixed(4)}</td>
+                                        <td>{Number(db["pln"].price*db[obj].price*1.03).toFixed(4)}</td>
+                                        <td>{Number(db["pln"].price*db[obj].price*0.98).toFixed(4)}</td>
                                     </tr>
                                 )
                             }
