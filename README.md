@@ -1,3 +1,5 @@
+# Projekt szkolny na lekcje Projektowania Zaawansowanych Aplikacji Webowych w PZS nr 2 w Wejherowie w roku szkolnym 2023/2024
+Autorzy: Mikołaj Morzycki, Oliwier Kotłowski 4gT
 ## Wymagana wersja nodejs - ^18.17.0
 ## Pakiety npm do doinstalowania
 
